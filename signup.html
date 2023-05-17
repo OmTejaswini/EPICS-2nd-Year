@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login1.css">
+    <script>
+		function validateEmail() {
+			const emailInput = document.getElementById("email").value;
+			const regex = /^[a-zA-Z0-9_.+-]+@student\.nitandhra\.ac\.in$/;
+			if (regex.test(emailInput)) {
+				
+			} else {
+				alert("Invalid email address!");
+                
+			}
+		}
+	</script>
+</head>
+<body class="body">
+    <form action="/signup.html" method="post" class="form" style="height: 810px;">
+        <div class="container" style="height: 700px;">
+            <h2 id="heading" style="margin-top: 35px;">SIGN UP</h2>
+            <div class="credentials" style="height: 430px;">
+                <div>
+                    <p>USERNAME</p>
+                    <input type="text" class="input" name="username" placeholder=" Enter your Username">
+                </div>
+                <br>
+                <div class="email">
+                    <p>EMAIL ID</p>
+                    <input type="text" class="input" name="email" id="email" placeholder=" Enter your Email">
+                </div>
+                <br>
+                <div>
+                    <p>CONTACT</p>
+                    <input type="text" class="input" name="contact" placeholder=" Enter your Contact Number">
+                </div>
+                <br>
+                <div class="password">
+                    <p>PASSWORD</p>
+                    <input type="password" class="input" name="password" placeholder=" Enter your Password">
+                </div>
+                <br>
+                <div class="password">
+                    <p>RE-TYPE PASSWORD</p>
+                    <input type="password" name="repassword" class="input" placeholder=" Re-type your Password">
+                </div>
+                <br>
+            </div>
+            <button id="button" onclick="validateEmail()">Sign Up</button>
+            <p>Already a Member? <a href="/login1.html" style="color: white; ">Log In</a></p>
+        </div>
+        <!-- <div class="image">
+            <p>Welcome Back!</p>
+            <img src="img6.jpg" alt="" id="image6">
+        </div> -->
+    </form>
+    <script src="signup.js"></script>
+</body>
+</html>
