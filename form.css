@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(45, 45, 45);
+    align-items: center;
+    width: 30vw;
+}
+
+.form{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form input{
+    margin: 30px;
+    height: 40px;
+    width: 250px;
+}
+
+.form h1{
+    color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/login1.css">
+    <script>
+        function navigateToPage() {
+          window.location.href = '/description.html/bookings';
+        }
+    </script>
+        
+</head>
+<body style="display: flex; align-items: center; justify-content: center;">
+    <form action="/description.html/bookings" method="post" class="form" style="height: 550px;">
+        <div class="container" style="height: 370px;">
+            <h2 id="heading">Enter Your Email to view your bookings</h2>
+            <div class="credentials" style="height: 160px;">
+                <div class="email">
+                    <p>EMAIL ID</p>
+                    <input type="text" name="email" class="input" placeholder=" Enter your Email">
+                </div>
+                <br>
+                <div class="password">
+                    <p>PASSWORD</p>
+                    <input type="password" name="password" class="input" placeholder=" Enter your Password">
+                </div>
+                <br>
+            </div>
+            <button id="button">Submit</button>
+        </div>
+        <!-- <div class="image">
+            <p>Welcome Back!</p>
+            <img src="img6.jpg" alt="" id="image6">
+        </div> -->
+    </form>
+    <script src="/login1.js"></script>
+</body>
+</html>
